@@ -8,24 +8,29 @@
 
 import Foundation
 
-public struct Team: Codable, Identifiable {
+public struct Team: Codable, Sendable {
     public let id: String
     public let name: String
     public let type: TeamType
-    public let status: TeamStatus
-    public let memberCount: Int
-    public let createdAt: Date
+    public let members: [TeamMember]
     
-    public enum TeamType: String, Codable {
+    public enum TeamType: String, Codable, Sendable {
         case individual
         case organization
         case enterprise
     }
+}
+
+public struct TeamMember: Codable, Sendable {
+    public let id: String
+    public let name: String
+    public let email: String
+    public let role: Role
     
-    public enum TeamStatus: String, Codable {
-        case active
-        case inactive
-        case pendingAgreement = "pending_agreement"
+    public enum Role: String, Codable, Sendable {
+        case admin
+        case member
+        case guest
     }
 }
 
@@ -36,43 +41,37 @@ public class TeamService {
         self.client = client
     }
     
-    /// Get team details
-    /// - Parameter teamId: Team ID to fetch
-    /// - Returns: Team details
-    public func getTeam(id teamId: String) async throws -> Team {
-        return try await client.request("developer/teams/\(teamId)")
+    public func getTeam(id: String) async throws -> Team {
+        return try await client.request("teams/\(id)")
     }
     
-    /// List all teams
-    /// - Returns: List of all teams
-    public func listTeams() async throws -> [Team] {
-        return try await client.request("developer/teams")
+    public func getTeams() async throws -> [Team] {
+        return try await client.request("teams")
     }
     
-    /// Get team members
-    /// - Parameter teamId: Team ID
-    /// - Returns: List of team members
     public func getTeamMembers(teamId: String) async throws -> [TeamMember] {
-        return try await client.request("developer/teams/\(teamId)/members")
-    }
-}
-
-public struct TeamMember: Codable, Identifiable {
-    public let id: String
-    public let name: String
-    public let email: String
-    public let role: Role
-    public let status: MemberStatus
-    
-    public enum Role: String, Codable {
-        case admin
-        case member
-        case owner
+        return try await client.request("teams/\(teamId)/members")
     }
     
-    public enum MemberStatus: String, Codable {
-        case active
-        case pending
-        case inactive
+    public func addTeamMember(teamId: String, email: String, role: TeamMember.Role) async throws -> TeamMember {
+        return try await client.request(
+            "teams/\(teamId)/members",
+            method: .post,
+            parameters: [
+                "email": email,
+                "role": role.rawValue
+            ] as [String: String]
+        )
+    }
+    
+    public func createTeam(name: String, type: Team.TeamType) async throws -> Team {
+        return try await client.request(
+            "teams",
+            method: .post,
+            parameters: [
+                "name": name,
+                "type": type.rawValue
+            ] as [String: String]
+        )
     }
 }

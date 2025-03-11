@@ -10,20 +10,10 @@ import XCTest
 @testable import SwiftDunk
 
 final class SwiftDunkTests: XCTestCase {
-    func testConfigurationInitialization() {
-        let config = SwiftDunk.Configuration(
-            apiKey: "test-api-key",
-            environment: .development
-        )
-        
-        XCTAssertEqual(config.apiKey, "test-api-key")
-        XCTAssertEqual(config.environment.baseURL.absoluteString, "https://api.development.apple.com/")
-    }
-    
-    func testSwiftDunkInitialization() {
-        let config = SwiftDunk.Configuration(
-            apiKey: "test-api-key",
-            environment: .development
+    func testSwiftDunkInitialization() throws {
+        // Test SwiftDunk initialization with configuration
+        let config = SwiftDunkConfiguration(
+            environment: .production
         )
         
         let swiftDunk = SwiftDunk(configuration: config)
@@ -32,11 +22,30 @@ final class SwiftDunkTests: XCTestCase {
         XCTAssertNotNil(swiftDunk.auth)
         XCTAssertNotNil(swiftDunk.anisette)
         XCTAssertNotNil(swiftDunk.xcode)
-        
-        // Verify model services were initialized
-        XCTAssertNotNil(swiftDunk.accounts)
-        XCTAssertNotNil(swiftDunk.apps)
-        XCTAssertNotNil(swiftDunk.devices)
-        XCTAssertNotNil(swiftDunk.teams)
     }
+    
+    func testVersionString() {
+        // Test version number is available
+        XCTAssertFalse(SwiftDunk.version.isEmpty)
+    }
+    
+    // This test can be run when you want to verify actual authentication
+    // Comment out this test during normal development
+    /*
+    func testAuth() async throws {
+        let config = SwiftDunkConfiguration(
+            environment: .production
+        )
+        
+        let swiftDunk = SwiftDunk(configuration: config)
+        
+        // This is for manual testing only - add real credentials when needed
+        // let result = try await swiftDunk.auth.authenticate(
+        //     username: "test@example.com",
+        //     password: "password"
+        // )
+        
+        // XCTAssertNotNil(result)
+    }
+    */
 }

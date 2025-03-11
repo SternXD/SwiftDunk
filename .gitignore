@@ -5,29 +5,21 @@
 //  Created by SternXD on 3/10/25.
 //
 
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+
+.swiftpm/
+
+.build/
+
 ## User settings
 xcuserdata/
 
 ## Obj-C/Swift specific
 *.hmap
 
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
 ## Swift Package Manager
 Packages/
 Package.pins
 Package.resolved
 *.xcodeproj
-
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-.swiftpm
-
-.build/

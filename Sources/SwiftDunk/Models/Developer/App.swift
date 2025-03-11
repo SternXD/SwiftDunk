@@ -8,32 +8,28 @@
 
 import Foundation
 
-public struct App: Codable, Identifiable {
+public struct App: Codable, Sendable {
     public let id: String
     public let bundleId: String
     public let name: String
-    public let sku: String?
-    public let appStoreState: AppStoreState?
     public let platform: Platform
+    public let version: String
+    public let buildNumber: String
+    public let status: Status
     public let teamId: String
-    public let createdAt: Date
-    public let updatedAt: Date
     
-    public enum AppStoreState: String, Codable {
-        case accepted
-        case rejected
-        case pendingReview = "pending_review"
-        case inReview = "in_review"
-        case waitingForUpload = "waiting_for_upload"
-        case readyForSale = "ready_for_sale"
-        case developerRemovedFromSale = "developer_removed_from_sale"
-    }
-    
-    public enum Platform: String, Codable {
-        case iOS
+    public enum Platform: String, Codable, Sendable {
+        case ios
         case macOS
         case tvOS
         case watchOS
+    }
+    
+    public enum Status: String, Codable, Sendable {
+        case development
+        case inReview
+        case approved
+        case rejected
     }
 }
 
@@ -44,43 +40,35 @@ public class AppService {
         self.client = client
     }
     
-    /// Get app details
-    /// - Parameter appId: App ID to fetch
-    /// - Returns: App details
-    public func getApp(id appId: String) async throws -> App {
-        return try await client.request("developer/apps/\(appId)")
+    public func getApp(id: String) async throws -> App {
+        return try await client.request("apps/\(id)")
     }
     
-    /// List all apps
-    /// - Returns: List of all apps
-    public func listApps() async throws -> [App] {
-        return try await client.request("developer/apps")
+    public func getApps(teamId: String? = nil) async throws -> [App] {
+        var endpoint = "apps"
+        if let teamId = teamId {
+            endpoint += "?teamId=\(teamId)"
+        }
+        return try await client.request(endpoint)
     }
     
-    /// Create a new app
-    /// - Parameter app: App information for creation
-    /// - Returns: Created app details
-    public func createApp(_ app: AppCreationInfo) async throws -> App {
+    public func createApp(bundleId: String, name: String, platform: App.Platform) async throws -> App {
         return try await client.request(
-            "developer/apps",
+            "apps",
             method: .post,
-            parameters: app.toDictionary()
+            parameters: [
+                "bundleId": bundleId,
+                "name": name,
+                "platform": platform.rawValue
+            ] as [String: String]
         )
     }
-}
-
-public struct AppCreationInfo: Codable {
-    public let name: String
-    public let bundleId: String
-    public let platform: App.Platform
-    public let teamId: String
     
-    public func toDictionary() -> [String: Any] {
-        return [
-            "name": name,
-            "bundle_id": bundleId,
-            "platform": platform.rawValue,
-            "team_id": teamId
-        ]
+    public func updateApp(id: String, details: [String: String]) async throws -> App {
+        return try await client.request(
+            "apps/\(id)",
+            method: .patch,
+            parameters: details
+        )
     }
 }

@@ -7,74 +7,104 @@
 
 
 import Foundation
-import Alamofire
 
-class NetworkClient {
+public class NetworkClient {
     private let baseURL: URL
-    private let apiKey: String
-    private let session: Session
+    private var session: URLSession
+    private var headers: [String: String] = [:]
     
-    init(baseURL: URL, apiKey: String) {
+    /// Initialize client with base URL
+    /// - Parameters:
+    ///   - baseURL: Base URL for API requests
+    ///   - session: URL session (defaults to shared session)
+    init(
+        baseURL: URL,
+        session: URLSession = .shared
+    ) {
         self.baseURL = baseURL
-        self.apiKey = apiKey
+        self.session = session
         
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 30
-        self.session = Session(configuration: configuration)
+        // Set default headers
+        self.headers = [
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        ]
     }
     
-    func request<T: Decodable & Sendable>(
-        _ endpoint: String,
-        method: HTTPMethod = .get,
-        parameters: Parameters? = nil,
-        headers: HTTPHeaders? = nil
-    ) async throws -> T {
+    /// Update authentication token
+    /// - Parameter token: Authentication token
+    public func setAuthToken(_ token: String) {
+        headers["Authorization"] = "Bearer \(token)"
+    }
+    
+    /// Make request to endpoint
+    /// - Parameters:
+    ///   - endpoint: API endpoint
+    ///   - method: HTTP method
+    ///   - parameters: Request parameters
+    /// - Returns: Decoded response
+    public func request<T: Decodable>(_ endpoint: String,
+                                     method: HTTPMethod = .get,
+                                     parameters: [String: Any]? = nil) async throws -> T {
+        // Create URL
         let url = baseURL.appendingPathComponent(endpoint)
         
-        // Default headers including authorization
-        var requestHeaders = HTTPHeaders.default
-        requestHeaders["Authorization"] = "Bearer \(apiKey)"
+        // Create request
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
         
-        // Add custom headers if any
-        if let headers = headers {
-            headers.forEach { requestHeaders.add($0) }
+        // Add headers
+        for (key, value) in headers {
+            request.setValue(value, forHTTPHeaderField: key)
         }
         
-        // Determine encoding based on method
-        let encoding: ParameterEncoding = (method == .get) ? URLEncoding.default : JSONEncoding.default
-        
-        return try await withCheckedThrowingContinuation { continuation in
-            session.request(
-                url,
-                method: method,
-                parameters: parameters,
-                encoding: encoding,
-                headers: requestHeaders
-            )
-            .validate()
-            .responseDecodable(of: T.self) { response in
-                switch response.result {
-                case .success(let value):
-                    continuation.resume(returning: value)
-                case .failure(let error):
-                    if let data = response.data {
-                        let networkError = NetworkError.serverError(
-                            statusCode: response.response?.statusCode ?? 0,
-                            data: data
-                        )
-                        continuation.resume(throwing: networkError)
-                    } else {
-                        continuation.resume(throwing: error)
-                    }
+        // Add parameters
+        if let parameters = parameters {
+            if method == .get {
+                // Add query parameters for GET requests
+                var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+                components?.queryItems = parameters.map {
+                    URLQueryItem(name: $0.key, value: "\($0.value)")
                 }
+                request.url = components?.url
+            } else {
+                // Add JSON body for other requests
+                let jsonData = try JSONSerialization.data(withJSONObject: parameters, options: [])
+                request.httpBody = jsonData
             }
         }
+        
+        // Make request
+        let (data, response) = try await session.data(for: request)
+        
+        // Check response
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw NetworkError.invalidResponse
+        }
+        
+        // Check status code
+        guard (200...299).contains(httpResponse.statusCode) else {
+            throw NetworkError.httpError(statusCode: httpResponse.statusCode, data: data)
+        }
+        
+        // Decode response
+        return try JSONDecoder().decode(T.self, from: data)
     }
-}
-
-enum NetworkError: Error, Sendable {
-    case invalidURL
-    case invalidResponse
-    case serverError(statusCode: Int, data: Data)
-    case decodingError(String)  // Changed from Error to String for Sendable conformance
+    
+    // HTTP methods
+    public enum HTTPMethod: String {
+        case get = "GET"
+        case post = "POST"
+        case put = "PUT"
+        case patch = "PATCH"
+        case delete = "DELETE"
+    }
+    
+    // Network errors
+    public enum NetworkError: Error {
+        case invalidURL
+        case invalidResponse
+        case httpError(statusCode: Int, data: Data)
+        case decodingError(Error)
+    }
 }
