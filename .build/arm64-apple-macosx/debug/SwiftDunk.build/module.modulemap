@@ -1,0 +1,4 @@
+module SwiftDunk {
+    header "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk-Swift.h"
+    requires objc
+}

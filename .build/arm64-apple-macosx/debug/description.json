@@ -1,0 +1,740 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.xctest/Contents/MacOS/SwiftDunkPackageTests",
+      "packagePath" : "/Users/stern/Documents/SwiftDunk",
+      "productName" : "SwiftDunkPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftDunk-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/sources",
+      "importPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Common/Common.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Configuration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Account.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Device.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Team.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/NetworkClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AnisetteService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AuthService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/XcodeService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/SwiftDunk.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/swift-version-5BDAB9E9C0126B9D.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftDunk",
+      "moduleOutputPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunk.swiftmodule",
+      "objects" : [
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.swift.o",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunk.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Common/Common.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Configuration.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Account.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/App.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Device.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Team.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/NetworkClient.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AnisetteService.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AuthService.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/XcodeService.swift",
+        "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/SwiftDunk.swift"
+      ],
+      "tempsPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftDunkPackageTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/sources",
+      "importPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/swift-version-5BDAB9E9C0126B9D.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunkTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftDunkPackageTests",
+      "moduleOutputPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunkPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/SwiftDunkPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunkPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftDunkTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/sources",
+      "importPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Tests/SwiftDunkTests/SwiftDunkTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/swift-version-5BDAB9E9C0126B9D.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunk.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftDunkTests",
+      "moduleOutputPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunkTests.swiftmodule",
+      "objects" : [
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/SwiftDunkTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/SwiftDunkTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules/SwiftDunkTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stern/Documents/SwiftDunk/Tests/SwiftDunkTests/SwiftDunkTests.swift"
+      ],
+      "tempsPath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftDunk" : [
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftDunk",
+      "-incremental",
+      "-c",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Common/Common.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Configuration.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Account.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/App.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Device.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Team.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/NetworkClient.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AnisetteService.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AuthService.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/XcodeService.swift",
+      "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/SwiftDunk.swift",
+      "-I",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftDunkPackageTests" : [
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftDunkPackageTests",
+      "-incremental",
+      "-c",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/SwiftDunkPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftDunkTests" : [
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftDunkTests",
+      "-incremental",
+      "-c",
+      "/Users/stern/Documents/SwiftDunk/Tests/SwiftDunkTests/SwiftDunkTests.swift",
+      "-I",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftDunk" : [
+
+    ],
+    "SwiftDunkPackageTests" : [
+      "SwiftDunkTests",
+      "SwiftDunk"
+    ],
+    "SwiftDunkTests" : [
+      "SwiftDunk"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Common/Common.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Configuration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Account.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Device.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Team.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/NetworkClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AnisetteService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AuthService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/XcodeService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/SwiftDunk.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/sources"
+    },
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/sources"
+    },
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/SwiftDunkTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stern/Documents/SwiftDunk/Tests/SwiftDunkTests/SwiftDunkTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkTests.build/sources"
+    },
+    "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/swift-version-5BDAB9E9C0126B9D.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/swift-version-5BDAB9E9C0126B9D.txt"
+    }
+  }
+}

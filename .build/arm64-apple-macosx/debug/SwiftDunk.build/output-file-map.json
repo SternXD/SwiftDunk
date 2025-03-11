@@ -1,0 +1,71 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/master.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Common/Common.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Common.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Configuration.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Configuration.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Account.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Account.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/App.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/App.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Device.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Device.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Models/Developer/Team.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/Team.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/NetworkClient.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/NetworkClient.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AnisetteService.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AnisetteService.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/AuthService.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/AuthService.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/Services/XcodeService.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/XcodeService.swiftdeps"
+  },
+  "/Users/stern/Documents/SwiftDunk/Sources/SwiftDunk/SwiftDunk.swift": {
+    "dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.d",
+    "object": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.swift.o",
+    "swiftmodule": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk~partial.swiftmodule",
+    "swift-dependencies": "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunk.build/SwiftDunk.swiftdeps"
+  }
+}

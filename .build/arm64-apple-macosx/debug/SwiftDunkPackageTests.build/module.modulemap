@@ -1,0 +1,4 @@
+module SwiftDunkPackageTests {
+    header "/Users/stern/Documents/SwiftDunk/.build/arm64-apple-macosx/debug/SwiftDunkPackageTests.build/SwiftDunkPackageTests-Swift.h"
+    requires objc
+}
